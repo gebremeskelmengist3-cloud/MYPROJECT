@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GEBREMESKEL MENGIST | Web Developer</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#f8fafc;
+  color:#1f2937;
+}
+
+/* NAVIGATION */
+
+nav{
+  background:#0f172a;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+.menu a:hover{
+  color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+  min-height:92vh;
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.profile-img{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid white;
+  margin-bottom:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.hero h1{
+  font-size:45px;
+  margin-bottom:12px;
+}
+
+.hero h2{
+  font-size:25px;
+  font-weight:normal;
+  margin-bottom:20px;
+}
+
+.hero p{
+  max-width:650px;
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  background:white;
+  color:#2563eb;
+  padding:14px 25px;
+  border-radius:9px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:5px;
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+/* SECTIONS */
+
+section{
+  padding:75px 8%;
+}
+
+.title{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:40px;
+}
+
+.about{
+  text-align:center;
+}
+
+.about p{
+  max-width:750px;
+  margin:auto;
+  line-height:1.8;
+  color:#64748b;
+  font-size:17px;
+}
+
+/* SKILLS */
+
+.skills{
+  background:#eef2ff;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+}
+
+.card{
+  background:white;
+  padding:35px 20px;
+  text-align:center;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-7px);
+}
+
+.card .icon{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.card h3{
+  color:#2563eb;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#64748b;
+  line-height:1.6;
+}
+
+/* PROJECT */
+
+.projects{
+  background:white;
+}
+
+.project-btn{
+  display:inline-block;
+  margin-top:18px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  padding:10px 18px;
+  border-radius:7px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+}
+
+.contact p{
+  margin-bottom:30px;
+  color:#cbd5e1;
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.contact-btn{
+  padding:13px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  background:#2563eb;
+}
+
+.whatsapp{
+  background:#16a34a;
+}
+
+.telegram{
+  background:#0284c7;
+}
+
+.email{
+  background:#dc2626;
+}
+
+/* FOOTER */
+
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:25px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .menu{
+    text-align:center;
+  }
+
+  .menu a{
+    margin:0 7px;
+    font-size:14px;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero h2{
+    font-size:21px;
+  }
+
+  .profile-img{
+    width:145px;
+    height:145px;
+  }
+
+  section{
+    padding:60px 6%;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">GM</div>
+
+<div class="menu">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<img
+src="eee.png"
+alt="GEBREMESKEL MENGIST"
+class="profile-img">
+
+<h1>GEBREMESKEL MENGIST</h1>
+
+<h2>Web Developer</h2>
+
+<p>
+Hello! Welcome to my personal portfolio.
+I build modern, responsive and mobile-friendly
+websites using HTML, CSS and JavaScript.
+</p>
+
+<div>
+
+<a href="#projects" class="btn">
+View My Work
+</a>
+
+<a href="#contact" class="btn">
+Contact Me
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2 class="title">About Me</h2>
+
+<p>
+My name is GEBREMESKEL MENGIST.
+I am passionate about technology and web development.
+I enjoy creating modern and responsive websites.
+
+I am continuously improving my HTML, CSS and
+JavaScript skills with the goal of becoming
+a professional web developer.
+</p>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="skills" id="skills">
+
+<h2 class="title">My Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>HTML</h3>
+
+<p>
+Creating clean and well-structured web pages.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>CSS</h3>
+
+<p>
+Designing beautiful, responsive and
+mobile-friendly websites.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚡</div>
+
+<h3>JavaScript</h3>
+
+<p>
+Adding interactive features and
+functionality to websites.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+<h2 class="title">My Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">👨‍💻</div>
+
+<h3>Personal Portfolio</h3>
+
+<p>
+My personal responsive portfolio website.
+</p>
+
+<a href="#" class="project-btn">
+View Project
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>Business Website</h3>
+
+<p>
+A professional website for businesses
+and small companies.
+</p>
+
+<a href="#" class="project-btn">
+Coming Soon
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚀</div>
+
+<h3>Future Projects</h3>
+
+<p>
+More web development projects
+will be added here.
+</p>
+
+<a href="#" class="project-btn">
+Coming Soon
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<p>
+Have a project or want to work together?
+Contact me using one of the options below.
+</p>
+
+<div class="contact-buttons">
+
+<a
+href="#"
+class="contact-btn whatsapp">
+WhatsApp
+</a>
+
+<a
+href="https://t.me/gebremeskel911"
+target="_blank"
+class="contact-btn telegram">
+Telegram
+</a>
+
+<a
+href="mailto:gebremeskelmengist3@gmail.com"
+class="contact-btn email">
+Email
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 GEBREMESKEL MENGIST
+</p>
+
+<p>
+Web Developer | All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
